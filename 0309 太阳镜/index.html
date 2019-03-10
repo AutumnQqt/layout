@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ecommerce</title>
   <link rel="stylesheet" href="./css/style.css">
+  <script src="//at.alicdn.com/t/font_1079460_t7iq1pdseah.js"></script>
 </head>
 <body>
   <header class="clearfix">
@@ -127,7 +128,7 @@
             <li></li>
             <li class="active"></li>
           </ul>
-          <div>
+          <div class="clearfix">
             <button>Add to cart</button>
             <button>$75</button>
           </div>
@@ -136,15 +137,15 @@
       <ul class="showGlass clearfix">
         <li><img src="./img/showGlass1.png" alt="sunglass"></li>
         <li><img src="./img/showGlass2.png" alt="sunglass"></li>
-        <li><img src="./img/showGlass3.png" alt="sunglass"></li>
+        <li class="active"><img src="./img/showGlass3.png" alt="sunglass"></li>
         <li><img src="./img/showGlass4.png" alt="sunglass"></li>
         <li><img src="./img/showGlass5.png" alt="sunglass"></li>
         <li><img src="./img/showGlass6.png" alt="sunglass"></li>
-        
       </ul>
     </section>  
-    <section class="art">
-      <aside></aside>
+    <section class="art clearfix">
+      <aside><img src="./img/aside1.png" alt=""></aside>
+      <aside><img src="./img/aside2.png" alt=""></aside>
       <div class="container">
         <h1>The Difference is<br>in The Lens</h1>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
@@ -153,11 +154,13 @@
           type Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard.
         </p>
-        <div class="imgShow"></div>
+        <div class="imgShow">
+          <div></div>
+          <img src="./img/art.png" alt="">
+        </div>
       </div>
-      <aside></aside>
     </section>
-    <section class="news">
+    <section class="news clearfix">
       <section class="card">
         <h1>News</h1>
         <ul>
@@ -173,10 +176,11 @@
           </li>
         </ul>
       </section>
-      <section class="testimonials">
+      <section class="testimonials clearfix">
+        <h1>Testimonials</h1>
         <div class="sideImg">
           <div></div>
-          <div></div>
+          <img src="./img/Layer41.png" alt="">
         </div>
         <article>
           <h2>Mabel Payne</h2>
@@ -184,44 +188,63 @@
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
             industry's standard dummy text ever since the 1500s, when an unknown printer simply dummy text of...
           </p>
+          <ul class="clearfix">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+          </ul>
         </article>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
       </section>
     </section>
   </main>
   <footer>
-    <section>
-      <div class="logo"></div>
-      <ul>
-        <li class="icon"></li>
-        <li class="icon"></li>
-        <li class="icon"></li>
-        <li class="icon"></li>
-      </ul>
-    </section>
-    <section>
-      <h2>Subscribe</h2>
-      <p>Join the Our community and keep up to date with exclusive 
-          offers, blog content, behind the scenes & more.</p>
-      <form action="#" method="POST">
-        <input type="email" name="email" id="email">
-        <input type="submit" value="Send">
-      </form>
-    </section>
-    <section>
-      <ul>
-        <li>FAQ</li>
-        <li>PRIVACY POLICY</li>
-        <li>TERMS & CONDITIONS</li>
-        <li>DELIVERY & RETURNS</li>
-        <li>SITEMAP</li>
-        <li>CONTACT US</li>
-      </ul>
-    </section>
+    <div class="clearfix">
+      <section>
+        <div class="logo"></div>
+        <ul class="social clearfix">
+          <li>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-facebook"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-instagram"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-youtube-copy"></use>
+            </svg>
+          </li>
+          
+        </ul>
+      </section>
+      <section class="enterMail">
+        <h2>Subscribe</h2>
+        <p>Join the Our community and keep up to date with exclusive 
+            offers, blog content, behind the scenes & more.</p>
+        <form action="#" method="POST" class="clearfix">
+          <input type="email" name="email" id="email">
+          <input type="submit" value="Send">
+        </form>
+      </section>
+      <section>
+        <ul class="more">
+          <li>FAQ</li>
+          <li>PRIVACY POLICY</li>
+          <li>TERMS & CONDITIONS</li>
+          <li>DELIVERY & RETURNS</li>
+          <li>SITEMAP</li>
+          <li>CONTACT US</li>
+        </ul>
+      </section>
+    </div>
   </footer>
 </body>
 </html>
